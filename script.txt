@@ -126,8 +126,9 @@ else
 					for i, v in pairs(custom_chars) do
 						local rep = string.gsub(newMessage, i, v .. "⁥")
 						newMessage = rep
+                                                newMessage1 = rep
 					end
-					newMessage = "/e can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can" .. newMessage .. default
+					newMessage1 = "/e can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can" .. newMessage .. default
 					newMessage = "￰" .. newMessage .. default
 
 					args[1] = newMessage
