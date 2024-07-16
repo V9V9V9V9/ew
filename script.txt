@@ -92,8 +92,8 @@ else
 
 		local c = function()
 			for i = 1, 2 do
-				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/e can can can can can can can can can can can can can can can can can ", "All")
-				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/e can can can can can can can can can can can can can can can can ", "All")
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/e Hey how are you doing?", "All")
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/e How are you doing?", "All")
 			end
 		end
 
@@ -127,6 +127,7 @@ else
 						local rep = string.gsub(newMessage, i, v .. "⁥")
 						newMessage = rep
 					end
+					newMessage = "/e can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can can" .. newMessage .. default
 					newMessage = "￰" .. newMessage .. default
 
 					args[1] = newMessage
